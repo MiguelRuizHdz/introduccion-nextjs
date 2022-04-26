@@ -1,38 +1,22 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { Navbar } from '../../components/Navbar'
+import Link from 'next/link';
+import { MainLayout } from '../../components/layouts/MainLayout';
 
-import styles from '../../styles/Home.module.css'
 
 export default function ContactPage() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Contact - Miguel</title>
-        <meta name="description" content="Contact Page" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <MainLayout>
+      <h1>Contact Page</h1>
 
-      <Navbar />
+      <h1 className={'title'}>
+        {/* Ir a <a href="/">Home!</a> */}
+        Ir a <Link href="/" replace>Home</Link>
 
-      <main className={styles.main}>
+      </h1>
 
-        <h1>Contact Page</h1>
-
-        <h1 className={styles.title}>
-          {/* Ir a <a href="/">Home!</a> */}
-          Ir a <Link href="/" replace>Home</Link>
-
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/contact.js</code>
-        </p>
-
-      </main>
-
-
-    </div>
+      <p className={'description'}>
+        Get started by editing{' '}
+        <code className={'code'}>pages/contact.js</code>
+      </p>
+    </MainLayout>
   )
 }
