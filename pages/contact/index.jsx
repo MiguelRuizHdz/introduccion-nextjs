@@ -8,9 +8,7 @@ export default function ContactPage() {
       <h1>Contact Page</h1>
 
       <h1 className={'title'}>
-        {/* Ir a <a href="/">Home!</a> */}
         Ir a <Link href="/" replace>Home</Link>
-
       </h1>
 
       <p className={'description'}>
