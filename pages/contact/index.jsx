@@ -13,7 +13,7 @@ export default function ContactPage() {
 
       <p className={'description'}>
         Get started by editing{' '}
-        <code className={'code'}>pages/contact.js</code>
+        <code className={'code'}>pages/contact/index.js</code>
       </p>
     </MainLayout>
   )
